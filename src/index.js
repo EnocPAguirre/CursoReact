@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import 'bootstrap/dist/css/bootstrap.css';
+import './global.css'
+
+
+import Badge from './components/Badge'
+import BadgeNew from './pages/BadgeNew'
+
+const container = document.getElementById('root');
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <BadgeNew/>,
+  container
 );
 
 // If you want to start measuring performance in your app, pass a function
